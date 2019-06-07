@@ -69,8 +69,8 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #FFFFFF,
-  secondary: #e4172b,
+  primary: #55117F,
+  secondary: #440066,
   success: #6cc490,
   warning: #ffae00,
   alert: #d41f25
@@ -130,7 +130,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: "Open Sans", sans-serif;
+$header-font-family: "Prompt", sans-serif;
 $header-font-weight: 600;
 $header-font-style: normal;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;

@@ -5,12 +5,14 @@
   background-color: $black;
   color: $white;
   height: 480px;
+  margin-top: 92px;
   padding: 3rem 0;
   position: relative;
   transition: background-color 0.25s ease-out;
 
   @include breakpoint(small down) {
     height: 480px;
+    margin-top: 68px;
   }
 
   @include breakpoint(large) {
@@ -63,59 +65,48 @@
 
   &__content {
     position: relative;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
     z-index: 10;
 
     @include breakpoint(small down) {
       .home-page & {
         @include vertical-center;
-        text-align: center;
         width: 100%;
       }
     }
 
-    .banner-logo {
-      padding-top: 5rem;
-    }
-
     h1,
     h2 {
-      @include breakpoint(large) {
-        font-size: rem-calc(100px);
-        line-height: rem-calc(88px);
-      }
-
-      @include breakpoint(medium) {
-        font-size: rem-calc(80px);
-        line-height: rem-calc(72px);
-      }
 
       @include breakpoint(small) {
-        font-size: rem-calc(50px);
+        font-size: rem-calc(32px);
         line-height: rem-calc(40px);
       }
     }
 
     h2 {
-      font-weight: 400;
+      font-weight: 600;
+      letter-spacing: 0.8rem;
       text-transform: uppercase;
+
+      em {
+        font-size: 150%;
+        font-style: normal;
+      }
     }
-  }
-}
 
-.underbanner {
-  background-color: $white;
-  color: $black;
-  padding: 0.5rem 0 !important;
-  text-transform: uppercase;
+    div {
+      font-size: rem-calc(21px);
+      letter-spacing: 0.1rem;
+      line-height: rem-calc(28px);
+      margin-bottom: 3rem;
 
-  p {
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
-    line-height: 2.2rem;
-    margin: 0 1.5rem;
+      strong {
+        font-size: 133%;
+        font-weight: 600;
+      }
+    }
   }
 }

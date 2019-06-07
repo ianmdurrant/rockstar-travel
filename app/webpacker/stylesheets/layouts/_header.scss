@@ -16,7 +16,7 @@
       text-align: left;
 
       @include breakpoint(medium down) {
-        height: 60px;
+        height: 68px;
       }
     }
   }
@@ -35,11 +35,11 @@
       // background-image: url('images/logo-m.svg');
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 60px;
+      background-size: 68px;
       display: flex;
-      height: 60px;
+      height: 68px;
       padding: 1rem;
-      width: 60px;
+      width: 68px;
     }
 
     .second {
@@ -49,10 +49,10 @@
       background-position: left center;
       background-size: contain;
       display: flex;
-      height: 60px;
+      height: 68px;
       padding: 0;
       text-indent: -9999px;
-      width: 185px;
+      width: 200px;
     }
   }
 
@@ -143,28 +143,38 @@
 
     .teleno {
       color: $white;
+      font-size: 1.4rem;
       line-height: 20px;
+      text-transform: uppercase;
 
       @include breakpoint(medium down) {
         display: none;
       }
-    }
 
-    .teleno a {
-      color: $white;
-      line-height: 20px;
-      padding: 0;
-      text-transform: none;
+      a {
+        color: $white;
+        font-size: 1rem;
+        line-height: 20px;
+        padding: 0;
+      }
+
+      h6 {
+        font-family: "Prompt", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.25rem;
+      }
     }
   }
 
 .offcanvas-menu-link {
   background-color: $black;
   display: flex;
-  height: 60px;
-  line-height: 60px;
-  padding: 20px;
-  width: 60px;
+  height: 68px;
+  line-height: 68px;
+  padding: 22px;
+  width: 68px;
 
   &__text {
     color: $primary-color;
@@ -215,7 +225,7 @@
 .menu.dropdown li.show-for-small-only {
 
   @include breakpoint(small down) {
-    width: calc(100% - 60px);
+    width: calc(100% - 68px);
   }
   a {
     display:inline-block;
@@ -231,7 +241,7 @@
   padding:0;
 
   @include breakpoint(medium down) {
-    width:60px;
+    width:68px;
   }
 }
 
