@@ -1,0 +1,48 @@
+.sidebar {
+  padding-top: 2rem;
+
+  h3 {
+    padding-bottom: 1rem;
+  }
+}
+
+.button {
+  background-color: transparent;
+  font-weight: 400;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+
+  &.submit {
+  padding: 0;
+  padding-right: 0 !important;
+
+
+    input[type="submit"] {
+      background-color: transparent;
+      border: 0;
+      box-shadow: 0;
+      color: $black;
+      font-weight: 600;
+      padding: 0.5rem 2rem;
+      text-transform: uppercase;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+    input[type="submit"]:hover {
+      background-color: transparent;
+      color: $white;
+    }
+    &:after {
+      z-index: -1;
+    }
+  }
+
+  &.submit:hover {
+  background-color: transparent;
+  color: $white;
+  }
+}

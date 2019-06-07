@@ -1,0 +1,121 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $black;
+  color: $white;
+  height: 480px;
+  padding: 3rem 0;
+  position: relative;
+  transition: background-color 0.25s ease-out;
+
+  @include breakpoint(small down) {
+    height: 480px;
+  }
+
+  @include breakpoint(large) {
+    height: 560px;
+  }
+
+  @include breakpoint(xlarge) {
+    height: 640px;
+  }
+
+  &.solid {
+    height: 200px;
+
+    &:before {
+      content: none;
+    }
+  }
+
+  &.light {
+    background: $light-gray;
+    color: $primary-color;
+    height: 400px;
+    position: relative;
+
+    &:before {
+      content: none;
+    }
+  }
+
+  &:before {
+    background: rgba($black, 0.5);
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color 0.25s ease-out;
+    width: 100%;
+    z-index: 5;
+  }
+
+  &__image {
+    display: block;
+    height: 100%;
+    margin-top: -3rem;
+  }
+
+  &__content {
+    position: relative;
+    top: 100%;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    z-index: 10;
+
+    @include breakpoint(small down) {
+      .home-page & {
+        @include vertical-center;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    .banner-logo {
+      padding-top: 5rem;
+    }
+
+    h1,
+    h2 {
+      @include breakpoint(large) {
+        font-size: rem-calc(100px);
+        line-height: rem-calc(88px);
+      }
+
+      @include breakpoint(medium) {
+        font-size: rem-calc(80px);
+        line-height: rem-calc(72px);
+      }
+
+      @include breakpoint(small) {
+        font-size: rem-calc(50px);
+        line-height: rem-calc(40px);
+      }
+    }
+
+    h2 {
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.underbanner {
+  background-color: $white;
+  color: $black;
+  padding: 0.5rem 0 !important;
+  text-transform: uppercase;
+
+  p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    line-height: 2.2rem;
+    margin: 0 1.5rem;
+  }
+}

@@ -1,0 +1,113 @@
+.footer {
+  background-color: $black;
+  color: $white;
+  padding: 2rem 0 1rem;
+
+  .cell {
+
+    @include breakpoint(small down) {
+      text-align: center;
+    }
+  }
+
+  .footer-logo {
+
+    img {
+      max-width: 200px;
+
+      @include breakpoint(small down) {
+        max-width: 30%;
+      }
+    }
+  }
+
+  .callus h3 {
+    font-size: rem-calc(44px);
+    line-height: rem-calc(38px);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .callus h3 em {
+    font-size: 80%;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+  }
+
+  p.contactdetails {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+  }
+
+  p.copyright {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $white;
+    transition: color 0.25s ease-out;
+  }
+
+  a.underline {
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: $medium-gray;
+  }
+
+  &__title {
+    color: $white;
+  }
+
+  &__menu {
+
+    a {
+      color: $white;
+      font-size: 1.25rem;
+      font-weight: 500;
+      padding: 0.5rem 0;
+
+      &:hover {
+        color: $medium-gray;
+      }
+    }
+  }
+
+  &__social {
+    justify-content: flex-end;
+
+    @include breakpoint(small only) {
+      justify-content: center;
+    }
+
+    li a {
+      padding: 0rem 1rem 1rem 0;
+    }
+
+    li:last-child a {
+      padding: 0rem 0rem 1rem 0;
+    }
+
+    img {
+        width: 24px;
+    }
+  }
+}
